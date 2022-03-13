@@ -121,9 +121,11 @@ const Chart = () => {
         const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
         return diffInDays <= 30;
       })
+      .sort((a, b) => {  return new Date(a).getTime() - new Date(b).getTime()})
       .map(elem => ({ date: elem, ...d[elem] }));
     setChartData(formmattedResults);
     setCurrentChartData(formmattedResults);
+    setTimeframe('30');
   }
   return (
     <div className='chartTab'>
