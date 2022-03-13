@@ -1,0 +1,72 @@
+.convertWrapper {
+  padding: 10px;
+}
+.convert {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  > div {
+    flex-grow: 1;
+    margin: 5px;
+  }
+  &-amount {
+    flex-grow: 0 !important;
+    max-width: 200px;
+    input {
+      border: 1px solid hsl(0, 0%, 80%);
+      border-radius: 6px;
+      box-shadow: none;
+      padding: 12px;
+      height: 38px;
+      font-size: 16px;
+      width: 100%;
+      outline: none;
+      &:focus {
+        border: 2px solid #2684ff;
+      }
+    }
+  }
+  &-matcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &-source {
+      &-from {
+        width: calc(50% - 10px);
+      }
+    }
+  
+    &-arrows {
+      cursor: pointer;
+      margin: 0 10px 5px;
+      flex-grow: 0 !important;
+    }
+    &-to {
+      width: calc(50% - 10px);
+    }
+  }
+  &-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  &-results {
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    font-size: 26px;
+    margin: 5px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

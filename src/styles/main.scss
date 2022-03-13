@@ -1,0 +1,75 @@
+@import "header.scss";
+@import "convert.scss";
+@import "responsive.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: #070641;
+}
+ul, li {
+  list-style: none;
+  margin: unset;
+  color: #070641;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 10px;
+  &:hover {
+    background-color: #ededed;
+  }
+}
+
+h5 {
+  margin: 5px 0;
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(233, 223, 223); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136); 
+  &:hover {
+    background: rgb(85, 85, 85); 
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-input-placeholder, /* Edge */
+:-ms-input-placeholder, /* Internet Explorer 10-11 */
+::placeholder {
+  font-size: 13px;
+}

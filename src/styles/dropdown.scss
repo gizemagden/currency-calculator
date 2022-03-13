@@ -1,0 +1,8 @@
+.currencyFlag {
+  border-radius: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  &.withMargin {
+    margin: 4px;
+  }
+}

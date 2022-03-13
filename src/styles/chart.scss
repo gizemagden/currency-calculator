@@ -1,0 +1,15 @@
+.chartTab {
+  padding: 10px;
+  &-line {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .convert-matcher {
+      flex-grow: 1;
+      margin: 6px;
+    }
+  }
+}
+.rateChart {
+  overflow: hidden;
+}

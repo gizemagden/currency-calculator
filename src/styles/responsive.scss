@@ -1,0 +1,39 @@
+@media screen and (max-width: 716px) {
+  .convert {
+    flex-direction: column;
+    align-items: center;
+    &-amount, &-matcher {
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      > div {
+        width: 100%;
+      }
+    }
+    &-to {
+      width: 100%;
+    }
+    &-matcher {
+      &-arrows {
+        justify-content: center;
+        display: flex;
+        transform: rotate(90deg);
+        margin-top: 20px;
+      }
+    }
+  }
+  .chartTab {
+    &-line {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .modal-actions {
+    flex-direction: column;
+    .side {
+      justify-content: space-between;
+    }
+  }
+}

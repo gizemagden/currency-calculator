@@ -1,0 +1,40 @@
+.button {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  margin: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #1C87D4;
+  position: relative;
+  svg {
+    margin-right: 5px;
+  }
+  &.download {
+    background-color: #1AE246;
+  }
+  &.timeframe {
+    background-color: #CCBDF6;
+  }
+  &.chartType {
+    background-color: #12b5a6;
+  }
+  &.statistics {
+    background-color: #AD99FC;
+  }
+  &.convertMe {
+    margin: 30px 0;
+    float: right;
+  }
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0 0);
+  }
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,64 @@
+.modal {
+  display: flex;
+  height: calc(100vh - 98px);
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+
+  &-content {
+    background: #fff;
+    width: 100%;
+    max-width: 954px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+
+  .tab {
+    display: flex;
+    &-item {
+      width: 50%;
+      border: none;
+      height: 36px;
+      border-radius: 6px;
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0 0);
+        cursor: pointer;
+      }
+      &.isActive {
+        background-color: #CCBDF6;
+        color: #fff;
+      }
+      &:nth-of-type(1) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      };
+      &:nth-of-type(2) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      };
+    }
+  }
+  &-actions {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #e5e5e5;
+    .side {
+      display: flex;
+      &-elem {
+        position: relative;
+      }
+    }
+  }
+
+  .popoverSelection-list {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+}
